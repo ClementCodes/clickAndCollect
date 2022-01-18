@@ -18,7 +18,7 @@ function Gallery() {
   
   const { loading, error, data } = useQuery(
     GET_PRODUCTS, {
-    variables: { category: "kids" },
+    variables: { category: "accessories" },
   });
  
   if (loading) return <p>Loading...</p>
@@ -28,7 +28,7 @@ function Gallery() {
   
   // if (!data) return <p>No data</p>;
 
-  
+ 
     console.dir(data)
     console.log(data)
   return (
